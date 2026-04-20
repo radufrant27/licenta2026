@@ -1,5 +1,5 @@
-mediapipe
-opencv-python-headless
-Pillow
-numpy
-fpdf2
+mediapipe==0.10.11
+opencv-python-headless==4.9.0.80
+Pillow==10.2.0
+numpy==1.26.4
+fpdf2==2.7.8
