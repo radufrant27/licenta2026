@@ -102,7 +102,7 @@ if meniu == "📋 Înregistrare Pacient":
         
         st.markdown("""
         <div class="instructiuni-foto">
-            <h4>📋 Ghid pentru înregistrare:</h4>
+            <h4> Ghid pentru înregistrare:</h4>
             Realizați sau încărcați <b>toate cele 4 poze</b> de mai jos pentru a asigura identificarea în orice scenariu medical. Pentru fiecare unghi puteți folosi camera web <b>SAU</b> puteți încărca un fișier preexistent.
         </div>
         """, unsafe_allow_html=True)
@@ -113,32 +113,32 @@ if meniu == "📋 Înregistrare Pacient":
 
         # 1. Față Ochi Deschiși
         with rand1_col1:
-            st.markdown("### 1. Față (Ochi Deschiși) 👀")
-            f1_cam = st.camera_input("📷 Poză Live", key="cam1")
-            f1_up = st.file_uploader("📂 Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up1")
+            st.markdown("### 1. Față (Ochi Deschiși) ")
+            f1_cam = st.camera_input(" Poză Live", key="cam1")
+            f1_up = st.file_uploader(" Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up1")
             f1 = f1_cam if f1_cam else f1_up
 
         # 2. Față Ochi Închiși
         with rand1_col2:
-            st.markdown("### 2. Față (Ochi Închiși) 😌")
-            f2_cam = st.camera_input("📷 Poză Live", key="cam2")
-            f2_up = st.file_uploader("📂 Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up2")
+            st.markdown("### 2. Față (Ochi Închiși) ")
+            f2_cam = st.camera_input(" Poză Live", key="cam2")
+            f2_up = st.file_uploader(" Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up2")
             f2 = f2_cam if f2_cam else f2_up
 
         st.write("") 
         
         # 3. Profil Stânga
         with rand2_col1:
-            st.markdown("### 3. Profil STÂNGA 👈")
-            f3_cam = st.camera_input("📷 Poză Live", key="cam3")
-            f3_up = st.file_uploader("📂 Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up3")
+            st.markdown("### 3. Profil STÂNGA ")
+            f3_cam = st.camera_input(" Poză Live", key="cam3")
+            f3_up = st.file_uploader(" Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up3")
             f3 = f3_cam if f3_cam else f3_up
 
         # 4. Profil Dreapta
         with rand2_col2:
-            st.markdown("### 4. Profil DREAPTA 👉")
-            f4_cam = st.camera_input("📷 Poză Live", key="cam4")
-            f4_up = st.file_uploader("📂 Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up4")
+            st.markdown("### 4. Profil DREAPTA ")
+            f4_cam = st.camera_input(" Poză Live", key="cam4")
+            f4_up = st.file_uploader(" Sau încarcă din dispozitiv", type=['jpg', 'jpeg', 'png'], key="up4")
             f4 = f4_cam if f4_cam else f4_up
             
         submit = st.form_submit_button("💾 SALVEAZĂ PACIENT ÎN SISTEM", use_container_width=True)
